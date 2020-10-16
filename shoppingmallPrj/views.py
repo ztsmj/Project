@@ -15,3 +15,15 @@ def product_details(request):
 
 def shop(request):
     return render(request, 'shoppingmallPrj/shop.jsp')
+
+def index(request):
+    return render(request, 'shoppingmallPrj/index.jsp')
+
+def manager(request):
+    return render(request, 'shoppingmallPrj/manager.jsp')
+
+def qna_board(request):
+    return render(request, 'shoppingmallPrj/qna_board.jsp')
+
+def checkout(request):
+    return render(request, 'shoppingmallPrj/checkout.jsp')

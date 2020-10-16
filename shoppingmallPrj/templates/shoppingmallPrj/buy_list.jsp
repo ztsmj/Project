@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="zxx">
+{% load static %}
+{% static "" as baseUrl %}
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
@@ -14,26 +14,26 @@
     rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}//css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}//css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}//css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}//css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}//css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}//css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}//css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}//css/style.css" type="text/css">
     
     <!-- Js Plugins -->
-<script src="./resources/js/jquery-3.3.1.min.js"></script>
-<script src="./resources/js/bootstrap.min.js"></script>
-<script src="./resources/js/jquery.magnific-popup.min.js"></script>
-<script src="./resources/js/jquery-ui.min.js"></script>
-<script src="./resources/js/mixitup.min.js"></script>
-<script src="./resources/js/jquery.countdown.min.js"></script>
-<script src="./resources/js/jquery.slicknav.js"></script>
-<script src="./resources/js/owl.carousel.min.js"></script>
-<script src="./resources/js/jquery.nicescroll.min.js"></script>
-<script src="./resources/js/main.js"></script>
+<script src="{{baseUrl}}//js/jquery-3.3.1.min.js"></script>
+<script src="{{baseUrl}}//js/bootstrap.min.js"></script>
+<script src="{{baseUrl}}//js/jquery.magnific-popup.min.js"></script>
+<script src="{{baseUrl}}//js/jquery-ui.min.js"></script>
+<script src="{{baseUrl}}//js/mixitup.min.js"></script>
+<script src="{{baseUrl}}//js/jquery.countdown.min.js"></script>
+<script src="{{baseUrl}}//js/jquery.slicknav.js"></script>
+<script src="{{baseUrl}}//js/owl.carousel.min.js"></script>
+<script src="{{baseUrl}}//js/jquery.nicescroll.min.js"></script>
+<script src="{{baseUrl}}//js/main.js"></script>
 
 
 
@@ -52,7 +52,7 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__close">+</div>  
         <div class="offcanvas__logo">
-            <a href="index.do"><img src="./resources/img/logo.png" alt=""></a>
+            <a href="index.do"><img src="{{baseUrl}}//img/logo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__auth">
@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-2">
                     <div class="header__logo">
-                        <a href="index.do"><img src="./resources/img/logo.png" alt=""></a>
+                        <a href="index.do"><img src="{{baseUrl}}//img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7">
@@ -121,7 +121,7 @@
                     <label for="save_id"> 아이디 저장</label>
                  </p>
                  <p class="log_btn">
-                    <input type="image" src="./resources/img/login_btn.gif" alt="로그인버튼" id="checking" />
+                    <input type="image" src="{{baseUrl}}//img/login_btn.gif" alt="로그인버튼" id="checking" />
                  </p>
                  <p class="join_btn_wrap">
                      <a href="checkout.do">회원가입</a>
@@ -129,7 +129,7 @@
                  </p>
                  <p class="login_close_btn">
                      <a href="#">
-                     <img src="./resources/img/login_close_btn.gif" alt="닫기버튼" />
+                     <img src="{{baseUrl}}//img/login_close_btn.gif" alt="닫기버튼" />
                      </a>
                  </p>
                </fieldset>		

@@ -46,7 +46,7 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__close">+</div>  
-        <div class="offcanvas__logo"><a href="index.do"><img src="{{baseUrl}}//img/logo.png" alt=""></a></div>
+        <div class="offcanvas__logo"><a href="index"><img src="{{baseUrl}}//img/logo.png" alt=""></a></div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__auth">
             <a href="#">Login</a>
@@ -61,20 +61,20 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-2">
                     <div class="header__logo">
-                        <a href="index.do"><img src="{{baseUrl}}//img/logo.png" alt=""></a>
+                        <a href="index"><img src="{{baseUrl}}//img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="index.do">홈</a></li>                          
-                            <li><a href="manager.do">관리자모드</a></li>
-                            <li><a href="shop.do">쇼핑기능</a></li>
+                            <li class="active"><a href="index">홈</a></li>
+                            <li><a href="manager">관리자모드</a></li>
+                            <li><a href="shop">쇼핑기능</a></li>
                             <li><a href="#">부가기능</a>
                                 <ul class="dropdown">
                                     
-                                    <li><a href="shop_cart.do">장바구니</a></li> 
-                                    <li><a href="qna_board.do">1:1 문의</a></li> 
+                                    <li><a href="shop_cart">장바구니</a></li>
+                                    <li><a href="qna_board">1:1 문의</a></li>
                                 </ul>
                             </li>                          
                         </ul>
@@ -84,7 +84,7 @@
                     <div class="header__right">
                         <div class="header__right__auth">
                             <a href="#" id="login_click">로그인</a>
-                            <a href="checkout.do">회원가입</a>
+                            <a href="checkout">회원가입</a>
                         </div>                       
                     </div>
                 </div>
@@ -118,7 +118,7 @@
                     <input type="image" src="{{baseUrl}}//img/login_btn.gif" alt="로그인버튼" id="checking" />
                  </p>
                  <p class="join_btn_wrap">
-                     <a href="checkout.do">회원가입</a>
+                     <a href="checkout">회원가입</a>
 
                  </p>
                  <p class="login_close_btn">
@@ -152,7 +152,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__links">
-                        <a href="index.do"><i class="fa fa-home"></i> 홈</a>
+                        <a href="index"><i class="fa fa-home"></i> 홈</a>
                         <span>쇼핑기능</span>
                     </div>
                 </div>
@@ -179,9 +179,9 @@
                                         <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
                                             <div class="card-body">
                                                 <ul>
-                                                    <li><a href="shop_type.do?category_type_id=2">아우터</a></li>
-                                                    <li><a href="shop_type.do?category_type_id=1">원피스</a></li>
-                                                    <li><a href="shop_type.do?category_type_id=3">블라우스</a></li>
+                                                    <li><a href="shop_type?category_type_id=2">아우터</a></li>
+                                                    <li><a href="shop_type?category_type_id=1">원피스</a></li>
+                                                    <li><a href="shop_type?category_type_id=3">블라우스</a></li>
                                                     
                                                 </ul>
                                             </div>
@@ -201,7 +201,7 @@
                             <div class="section-title">
                                 <h4>금액 검색(천원)</h4>
                             </div>
-                            <form action="shop_search.do">
+                            <form action="shop_search">
                             <div class="filter-range-wrap">
                                 <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
                                 data-min="3" data-max="100"></div>
@@ -249,12 +249,12 @@
                                     <div class="label new">New</div>                                            
                                     <ul class="product__hover">                                      
                                         <li><a href="resources/upload/${product_info.product_fname}" class="image-popup"><span class="arrow_expand"></span></a></li>
-                                        <li><a href="product_details.do?product_id=${product_info.product_id}"><span class="icon_heart_alt"></span></a></li>
-                                        <li><a href="product_details.do?product_id=${product_info.product_id}"><span class="icon_bag_alt" ></span></a></li>
+                                        <li><a href="product_details?product_id=${product_info.product_id}"><span class="icon_heart_alt"></span></a></li>
+                                        <li><a href="product_details?product_id=${product_info.product_id}"><span class="icon_bag_alt" ></span></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6><a href="product_details.do?product_id=${product_info.product_id}">${product_info.product_name}</a></h6>
+                                    <h6><a href="product_details?product_id=${product_info.product_id}">${product_info.product_name}</a></h6>
                                     <div class="rating">
                                         <i class="fa fa-star"></i>
                                         <i class="fa fa-star"></i>

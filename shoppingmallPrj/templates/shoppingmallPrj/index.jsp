@@ -56,7 +56,7 @@ sessionStorage.clear();
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__close">+</div>  
         <div class="offcanvas__logo">
-            <a href="index.do"><img src="{{baseUrl}}/img/logo.png" alt=""></a>
+            <a href="index"><img src="{{baseUrl}}/img/logo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__auth">
@@ -78,15 +78,15 @@ sessionStorage.clear();
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="index.do">홈</a></li>                          
-                            <li><a href="manager.do">관리자모드</a></li>
+                            <li class="active"><a href="index">홈</a></li>
+                            <li><a href="manager">관리자모드</a></li>
                             <li><a href="shop">쇼핑기능</a></li>
                             <li><a href="#">부가기능</a>
                                 <ul class="dropdown">
 
                                     <li><a href="shop_cart">장바구니</a></li>
-                                    <li><a href="product_details.do">상세보기</a></li> 
-                                    <li><a href="qna_board.do">1:1 문의</a></li> 
+                                    <li><a href="product_details">상세보기</a></li>
+                                    <li><a href="qna_board">1:1 문의</a></li>
                                 </ul>
                             </li>                          
                         </ul>
@@ -96,7 +96,7 @@ sessionStorage.clear();
                     <div class="header__right">
                         <div class="header__right__auth">
                             <a href="#" id="login_click">로그인</a>
-                            <a href="checkout.do">회원가입</a>
+                            <a href="checkout">회원가입</a>
                             <a href="my_page">마이페이지</a>
                         </div>                       
                     </div>
@@ -111,7 +111,7 @@ sessionStorage.clear();
 	<div >
 				
 
-		 <form action="login.do" method="post" name="log_f" id="login_f">
+		 <form action="login" method="post" name="log_f" id="login_f">
                <fieldset >
                  <legend>로그인</legend>
                  <p class="client_id">
@@ -133,7 +133,7 @@ sessionStorage.clear();
                     <input type="submit" src="{{baseUrl}}/img/login_btn.gif" alt="로그인버튼" id="checking" value="로그인"/>
                  </p>
                  <p class="join_btn_wrap">
-                     <a href="checkout.do">회원가입</a>
+                     <a href="checkout">회원가입</a>
 
 
                  </p>
@@ -244,7 +244,7 @@ sessionStorage.clear();
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="product_details.do?product_id=47"><span style="font-family: Arial;font-size:13px;color:#555555;">블란드-bl (주문폭주!)</span></a></h6>
+                        <h6><a href="product_details?product_id=47"><span style="font-family: Arial;font-size:13px;color:#555555;">블란드-bl (주문폭주!)</span></a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -267,7 +267,7 @@ sessionStorage.clear();
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="product_details.do?product_id=48"><span style="font-family: Arial;font-size:13px;color:#555555;">메이시-jk (한정수량!)</span></a></h6>
+                        <h6><a href="product_details?product_id=48"><span style="font-family: Arial;font-size:13px;color:#555555;">메이시-jk (한정수량!)</span></a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -290,7 +290,7 @@ sessionStorage.clear();
                         </ul>
                     </div>
                      <div class="product__item__text">
-                        <h6><a href="product_details.do?product_id=49"><span style="font-family: Arial;font-size:13px;color:#555555;">브레트-ops (품절)</span></a></h6>
+                        <h6><a href="product_details?product_id=49"><span style="font-family: Arial;font-size:13px;color:#555555;">브레트-ops (품절)</span></a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -312,7 +312,7 @@ sessionStorage.clear();
                         </ul>
                     </div>
                      <div class="product__item__text">
-                        <h6><a href="product_details.do?product_id=50"><span style="font-family: Arial;font-size:13px;color:#555555;">러니안-ops (자체제작!)</span></a></h6>
+                        <h6><a href="product_details?product_id=50"><span style="font-family: Arial;font-size:13px;color:#555555;">러니안-ops (자체제작!)</span></a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -334,7 +334,7 @@ sessionStorage.clear();
                         </ul>
                     </div>
                    <div class="product__item__text">
-                        <h6><a href="product_details.do?product_id=51"><span style="font-family: Arial;font-size:13px;color:#555555;">브레트-ops (navy)</span></a></h6>
+                        <h6><a href="product_details?product_id=51"><span style="font-family: Arial;font-size:13px;color:#555555;">브레트-ops (navy)</span></a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -357,7 +357,7 @@ sessionStorage.clear();
                         </ul>
                     </div>
                      <div class="product__item__text">
-                        <h6><a href="product_details.do?product_id=52"><span style="font-family: Arial;font-size:13px;color:#555555;">플로에-ops (black)</span></a></h6>
+                        <h6><a href="product_details?product_id=52"><span style="font-family: Arial;font-size:13px;color:#555555;">플로에-ops (black)</span></a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -379,7 +379,7 @@ sessionStorage.clear();
                         </ul>
                     </div>
                                        <div class="product__item__text">
-                        <h6><a href="product_details.do?product_id=53"><span style="font-family: Arial;font-size:13px;color:#555555;">미뉴엘-ops (green)</span></a></h6>
+                        <h6><a href="product_details?product_id=53"><span style="font-family: Arial;font-size:13px;color:#555555;">미뉴엘-ops (green)</span></a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>
@@ -402,7 +402,7 @@ sessionStorage.clear();
                         </ul>
                     </div>
                     <div class="product__item__text">
-                        <h6><a href="product_details.do?product_id=54"><span style="font-family: Arial;font-size:13px;color:#555555;">플로에-ops (white)</span></a></h6>
+                        <h6><a href="product_details?product_id=54"><span style="font-family: Arial;font-size:13px;color:#555555;">플로에-ops (white)</span></a></h6>
                         <div class="rating">
                             <i class="fa fa-star"></i>
                             <i class="fa fa-star"></i>

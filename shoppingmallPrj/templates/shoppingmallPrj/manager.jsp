@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="ko">
+{% load static %}
+{% static "" as baseUrl %}
 <head>
     <meta charset="UTF-8">
  
@@ -14,38 +15,38 @@
     rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/jquery-ui.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="{{baseUrl}}/css/style.css" type="text/css">
     
     <!-- Js Plugins -->
-<script src="./resources/js/jquery-3.3.1.min.js"></script>
-<script src="./resources/js/bootstrap.min.js"></script>
-<script src="./resources/js/jquery.magnific-popup.min.js"></script>
-<script src="./resources/js/jquery-ui.min.js"></script>
-<script src="./resources/js/mixitup.min.js"></script>
-<script src="./resources/js/jquery.countdown.min.js"></script>
-<script src="./resources/js/jquery.slicknav.js"></script>
-<script src="./resources/js/owl.carousel.min.js"></script>
-<script src="./resources/js/jquery.nicescroll.min.js"></script>
-<script src="./resources/js/main.js"></script>
+<script src="{{baseUrl}}/js/jquery-3.3.1.min.js"></script>
+<script src="{{baseUrl}}/js/bootstrap.min.js"></script>
+<script src="{{baseUrl}}/js/jquery.magnific-popup.min.js"></script>
+<script src="{{baseUrl}}/js/jquery-ui.min.js"></script>
+<script src="{{baseUrl}}/js/mixitup.min.js"></script>
+<script src="{{baseUrl}}/js/jquery.countdown.min.js"></script>
+<script src="{{baseUrl}}/js/jquery.slicknav.js"></script>
+<script src="{{baseUrl}}/js/owl.carousel.min.js"></script>
+<script src="{{baseUrl}}/js/jquery.nicescroll.min.js"></script>
+<script src="{{baseUrl}}/js/main.js"></script>
 
 <!-- Js Plugins -->
-<script src="./resources/js/jquery-3.3.1.min.js"></script>
-<script src="./resources/js/bootstrap.min.js"></script>
-<script src="./resources/js/jquery.magnific-popup.min.js"></script>
-<script src="./resources/js/jquery-ui.min.js"></script>
-<script src="./resources/js/mixitup.min.js"></script>
-<script src="./resources/js/jquery.countdown.min.js"></script>
-<script src="./resources/js/jquery.slicknav.js"></script>
-<script src="./resources/js/owl.carousel.min.js"></script>
-<script src="./resources/js/jquery.nicescroll.min.js"></script>
-<script src="./resources/js/main.js"></script>
+<script src="{{baseUrl}}/js/jquery-3.3.1.min.js"></script>
+<script src="{{baseUrl}}/js/bootstrap.min.js"></script>
+<script src="{{baseUrl}}/js/jquery.magnific-popup.min.js"></script>
+<script src="{{baseUrl}}/js/jquery-ui.min.js"></script>
+<script src="{{baseUrl}}/js/mixitup.min.js"></script>
+<script src="{{baseUrl}}/js/jquery.countdown.min.js"></script>
+<script src="{{baseUrl}}/js/jquery.slicknav.js"></script>
+<script src="{{baseUrl}}/js/owl.carousel.min.js"></script>
+<script src="{{baseUrl}}/js/jquery.nicescroll.min.js"></script>
+<script src="{{baseUrl}}/js/main.js"></script>
 
 
 
@@ -64,7 +65,7 @@
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__close">+</div>  
         <div class="offcanvas__logo">
-            <a href="index.do"><img src="./resources/img/logo.png" alt=""></a>
+            <a href="index"><img src="{{baseUrl}}/img/logo.png" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__auth">
@@ -80,20 +81,20 @@
             <div class="row">
                 <div class="col-xl-3 col-lg-2">
                     <div class="header__logo">
-                        <a href="index.do"><img src="./resources/img/logo.png" alt=""></a>
+                        <a href="index"><img src="{{baseUrl}}/img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="index.do">홈</a></li>                          
-                            <li><a href="manager.do">관리자모드</a></li>
-                            <li><a href="shop.do">쇼핑기능</a></li>
+                            <li class="active"><a href="index">홈</a></li>
+                            <li><a href="manager">관리자모드</a></li>
+                            <li><a href="shop">쇼핑기능</a></li>
                             <li><a href="#">부가기능</a>
                                 <ul class="dropdown">
                                     
-                                    <li><a href="shop_cart.do">장바구니</a></li>
-                                    <li><a href="qna_board.do">1:1 문의</a></li>  
+                                    <li><a href="shop_cart">장바구니</a></li>
+                                    <li><a href="qna_board">1:1 문의</a></li>
                                 </ul>
                             </li>                          
                         </ul>
@@ -103,7 +104,7 @@
                     <div class="header__right">
                         <div class="header__right__auth">
                             <a href="#" id="login_click">로그인</a>
-                            <a href="checkout.do">회원가입</a>
+                            <a href="checkout">회원가입</a>
                         </div>                       
                     </div>
                 </div>
@@ -134,15 +135,15 @@
                     <label for="save_id"> 아이디 저장</label>
                  </p>
                  <p class="log_btn">
-                    <input type="image" src="./resources/img/login_btn.gif" alt="로그인버튼" id="checking" />
+                    <input type="image" src="{{baseUrl}}/img/login_btn.gif" alt="로그인버튼" id="checking" />
                  </p>
                  <p class="join_btn_wrap">
-                     <a href="checkout.do">회원가입</a>
+                     <a href="checkout">회원가입</a>
 
                  </p>
                  <p class="login_close_btn">
                      <a href="#">
-                     <img src="./resources/img/login_close_btn.gif" alt="닫기버튼" />
+                     <img src="{{baseUrl}}/img/login_close_btn.gif" alt="닫기버튼" />
                      </a>
                  </p>
                </fieldset>		
@@ -170,7 +171,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__links">
-                        <a href="index.do"><i class="fa fa-home"></i> 홈</a>
+                        <a href="index"><i class="fa fa-home"></i> 홈</a>
 						<a href="#">관리자페이지</a>
                        
                     </div>
@@ -249,27 +250,27 @@
             </div>
 
 			<div class='manager'>
-						<a href="manager_customer_detail.do" class='manager_btn'>회원 관리</a>
+						<a href="manager_customer_detail" class='manager_btn'>회원 관리</a>
 					</div>
 
 					<div class='manager'>
-						<a href="manager_product_detail.do" class='manager_btn'>상품 관리</a>
+						<a href="manager_product_detail" class='manager_btn'>상품 관리</a>
 
 
 					</div>
 
 					<div class='manager'>
-						<a href="manager_pay_all.do" class='manager_btn'>판매 관리</a>
-
-
-					</div>
-					<div class='manager'>
-						<a href="manager_add_product.do" class='manager_btn'>상품 추가하기</a>
+						<a href="manager_pay_all" class='manager_btn'>판매 관리</a>
 
 
 					</div>
 					<div class='manager'>
-						<a href="manager_qna_board.do" class='manager_btn'>문의게시판 관리</a>
+						<a href="manager_add_product" class='manager_btn'>상품 추가하기</a>
+
+
+					</div>
+					<div class='manager'>
+						<a href="manager_qna_board" class='manager_btn'>문의게시판 관리</a>
 
 
 					</div>

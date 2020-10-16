@@ -31,9 +31,6 @@ $(function () {
     		return;
     	}
     	
-    	
-    	
-       
         // 자료를 전송합니다.
         alert("회원가입이 완료되었습니다.");
         document.userinput.submit();

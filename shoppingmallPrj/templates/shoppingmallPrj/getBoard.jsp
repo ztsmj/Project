@@ -1,6 +1,6 @@
-<%@page contentType="text/html; charset=UTF-8"%>
-
 <!DOCTYPE>
+{% load static %}
+{% static "" as baseUrl %}
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -9,7 +9,7 @@
 <body>
 		<h1>글 상세</h1>		
 		<hr>
-		<form action="updateBoard.do" method="post">
+		<form action="updateBoard" method="post">
 			<input name="seq" type="hidden" value="${board.seq}" />
 			<table border="1" cellpadding="0" cellspacing="0">
 				<tr>
@@ -41,8 +41,8 @@
 			</table>
 		</form>
 		<hr>
-		<a href="insertBoard.do">글등록</a>&nbsp;&nbsp;&nbsp; 
-		<a href="deleteBoard.do?seq=${board.seq }">글삭제</a>&nbsp;&nbsp;&nbsp;
-		<a href="getBoardList.do">글목록</a>
+		<a href="insertBoard">글등록</a>&nbsp;&nbsp;&nbsp;
+		<a href="deleteBoard?seq=${board.seq }">글삭제</a>&nbsp;&nbsp;&nbsp;
+		<a href="getBoardList">글목록</a>
 </body>
 </html>

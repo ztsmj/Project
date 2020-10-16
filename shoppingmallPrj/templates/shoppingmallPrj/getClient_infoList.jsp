@@ -1,29 +1,25 @@
-<%@ page contentType="text/html; charset=EUC-KR"%>
-<%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>±Û ¸ñ·Ï</title>
+<title>ï¿½ï¿½ ï¿½ï¿½ï¿½</title>
 </head>
 <body>
-		<h1>°í°´ ¸ñ·Ï</h1>
+		<h1>ï¿½ï¿½ ï¿½ï¿½ï¿½</h1>
 
 		
 	<table border="1">
 			<tr>
-				<th bgcolor="orange" width="100">¹øÈ£</th>
-				<th bgcolor="orange" width="200">Á¦¸ñ</th>
-				<th bgcolor="orange" width="150">ÀÛ¼ºÀÚ</th>
-				<th bgcolor="orange" width="150">µî·ÏÀÏ</th>
-				<th bgcolor="orange" width="100">Á¶È¸¼ö</th>
+				<th bgcolor="orange" width="100">ï¿½ï¿½È£</th>
+				<th bgcolor="orange" width="200">ï¿½ï¿½ï¿½ï¿½</th>
+				<th bgcolor="orange" width="150">ï¿½Û¼ï¿½ï¿½ï¿½</th>
+				<th bgcolor="orange" width="150">ï¿½ï¿½ï¿½ï¿½ï¿½</th>
+				<th bgcolor="orange" width="100">ï¿½ï¿½È¸ï¿½ï¿½</th>
 			</tr>
 			<c:forEach items="${client_infoList }" var="client_info">
 				<tr>
 					<td>${client_info.client_id }</td>
-					<td align="left"><a href="getBoard.do?seq=${client_info.client_id }">
+					<td align="left"><a href="getBoard?seq=${client_info.client_id }">
 							${client_info.client_name }</a></td>
 					<td>${client_info.addr }</td>
 
@@ -31,6 +27,6 @@
 				</tr>
 			</c:forEach>
 		</table>
-		<br> <a href="insertBoard.do">»õ±Û µî·Ï</a>
+		<br> <a href="insertBoard">ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½</a>
 </body>
 </html>
