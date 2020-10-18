@@ -167,6 +167,7 @@
                 </div>
             </div>
             <form action="sign_in" class="checkout__form" method="post" name="userinput">
+                {% csrf_token %}
                 <div class="row">
                     <div class="col-lg-8">
                         <h5>회원가입</h5>

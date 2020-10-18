@@ -13,4 +13,6 @@ urlpatterns=[
     path("qna_board", views.qna_board),
     path("checkout", views.checkout),
     path("login", views.login),
+    path("logout", views.logout),
+    path("sign_in", views.sign_in),
 ]
