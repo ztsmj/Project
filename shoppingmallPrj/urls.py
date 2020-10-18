@@ -19,4 +19,10 @@ urlpatterns=[
     path("sign_in", views.sign_in),
     path("login_shop", views.login_shop),
     path("login_cart", views.login_cart),
+    path("shop_type", views.shop_type),
+    path("shop_search", views.shop_search),
+    path("manager_customer_detail", views.manager_customer_detail),
+    path("manager_product_detail", views.manager_product_detail),
+    path("manager_add_product", views.manager_add_product),
+    path("manager_qna_board", views.manager_qna_board),
 ]

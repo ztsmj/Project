@@ -33,9 +33,29 @@ def qna_board(request):
 def checkout(request):
     return render(request, 'shoppingmallPrj/checkout.jsp')
 
+def shop_type(request):
+    return render(request,'shoppingmallPrj/shop_type.jsp')
+
+def shop_search(request):
+    return render(request,'shoppingmallPrj/shop_search.jsp')
+
+def manager_customer_detail(request):
+    return render(request,'shoppingmallPrj/manager_customer_detail.jsp')
+
+def manager_product_detail(request):
+    return render(request,'shoppingmallPrj/manager_product_detail.jsp')
+
+def manager_pay_all(request):
+    return render(request,'shoppingmallPrj/manager_pay_all.jsp')
+
+def manager_add_product(request):
+    return render(request,'shoppingmallPrj/manager_add_product.jsp')
+
+def manager_qna_board(request):
+    return render(request,'shoppingmallPrj/manager_qna_board.jsp')
+
 @csrf_protect
 def login(request):
-    # 세션에 등록한 값이 존재하는 가
     if 'client_id' in request.session:
         return redirect('/index')
     if request.method == 'POST':
@@ -60,7 +80,6 @@ def login(request):
 
 @csrf_protect
 def login_shop(request):
-    # 세션에 등록한 값이 존재하는 가
     if 'client_id' in request.session:
         return redirect('/shoppingmallPrj/shop')
     if request.method == 'POST':
@@ -85,7 +104,6 @@ def login_shop(request):
 
 @csrf_protect
 def login_cart(request):
-    # 세션에 등록한 값이 존재하는 가
     if 'client_id' in request.session:
         return redirect('/shoppingmallPrj/shop_cart')
     if request.method == 'POST':
