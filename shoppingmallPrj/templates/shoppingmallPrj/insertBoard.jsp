@@ -5,7 +5,7 @@
 <title>새글등록</title>
 </head>
 <body>
-		<h1>글 등록</h1>		
+		<h1>글 등록</h1>	
 		<hr>
 		<form action="saveBoard" method="post"> <!--  enctype="multipart/form-data" -->
 			<table border="1" cellpadding="0" cellspacing="0">

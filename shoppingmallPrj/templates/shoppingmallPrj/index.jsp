@@ -72,7 +72,7 @@ sessionStorage.clear();
             <div class="row">
                 <div class="col-xl-3 col-lg-2">
                     <div class="header__logo">
-                        <a href="index.jsp"><img src="{{baseUrl}}/img/logo.png" alt=""></a>
+                        <a href="index"><img src="{{baseUrl}}/img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-7">
@@ -112,6 +112,7 @@ sessionStorage.clear();
 				
 
 		 <form action="login" method="post" name="log_f" id="login_f">
+		       {% csrf_token %}
                <fieldset >
                  <legend>로그인</legend>
                  <p class="client_id">

@@ -12,4 +12,5 @@ urlpatterns=[
     path("manager",views.manager),
     path("qna_board", views.qna_board),
     path("checkout", views.checkout),
+    path("login", views.login),
 ]
