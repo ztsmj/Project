@@ -14,5 +14,9 @@ urlpatterns=[
     path("checkout", views.checkout),
     path("login", views.login),
     path("logout", views.logout),
+    path("logout_shop", views.logout_shop),
+    path("logout_cart", views.logout_cart),
     path("sign_in", views.sign_in),
+    path("login_shop", views.login_shop),
+    path("login_cart", views.login_cart),
 ]

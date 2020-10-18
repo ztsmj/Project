@@ -89,8 +89,16 @@
                 <div class="col-lg-3">
                     <div class="header__right">
                         <div class="header__right__auth">
+                            {% if 'client_id' in request.session %}
+                            <ul>
+                                <li>{{request.session.client_name}}님 반갑습니다.</li>
+                                <a href="logout_cart">로그아웃</a>
+                                <a href="my_page">마이페이지</a>
+                            </ul>
+                        {% else %}
                             <a href="#" id="login_click">로그인</a>
                             <a href="checkout">회원가입</a>
+                        {% endif %}
                         </div>                       
                     </div>
                 </div>
@@ -104,7 +112,8 @@
 	<div >
 				
 
-		 <form action="#" method="post" name="log_f" id="login_f">
+		 <form action="login_cart" method="post" name="log_f" id="login_f">
+		 {% csrf_token %}
                <fieldset >
                  <legend>로그인</legend>
                  <p class="client_id">
